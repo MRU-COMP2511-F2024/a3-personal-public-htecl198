@@ -202,3 +202,48 @@ body {
 .project img:hover {
     transform: scale(1.05);
 }
+
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .nav-menu.open {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-control-prev {
+        left: -50px;
+    }
+
+    .carousel-control-next {
+        right: -50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-control-prev {
+        left: -30px; 
+    }
+
+    .carousel-control-next {
+        right: -30px;
+    }
+}
+
+
+
