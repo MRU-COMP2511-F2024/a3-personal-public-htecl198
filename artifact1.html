@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artifact 2 - Toy Store Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="logo">My ePortfolio</div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="artifact1.html">Project 1</a></li>
+                    <li><a href="artifact2.html" class="active">Project 2</a></li>
+                    <li><a href="artifact3.html">Project 3</a></li>
+                    <li><a href="artifact4.html">Project 4</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+   
+    <main class="project">
+        <div class="container">
+            <h2>Artifact 2: Toy Store Management System</h2>
+
+            <p><strong>Objective:</strong> The goal of this project was to develop a Toy Store Management System that allows users to find, purchase, and manage a database of toys. This project leveraged object-oriented programming (OOP) principles, including inheritance, abstraction, and interfaces.</p>
+
+            <h3>Key Features</h3>
+            <ul>
+                <li>Search inventory by serial number, name, or type with case-insensitive search functionality.</li>
+                <li>Purchase toys while automatically updating inventory counts.</li>
+                <li>Add or remove toys from the database with unique validation for serial numbers.</li>
+                <li>Save and load toy data to/from a text file, maintaining persistence across program runs.</li>
+                <li>Bonus Feature: Gift suggestion based on age, type, or price range.</li>
+            </ul>
+
+            <h3>Challenges and Solutions</h3>
+            <p><strong>Challenge:</strong> Implementing OOP structure effectively to model toys and their behaviors.<br>
+               <strong>Solution:</strong> Designed an abstract superclass `Toy` and derived classes (e.g., `Figure`, `Animal`, `Puzzle`, `BoardGame`) to manage unique attributes for each toy type.</p>
+            <p><strong>Challenge:</strong> Ensuring data consistency when multiple operations modified the inventory.<br>
+               <strong>Solution:</strong> Centralized all toy data in an `ArrayList` and used appropriate synchronization for thread safety.</p>
+            <p><strong>Challenge:</strong> Validating user inputs for toy creation and transactions.<br>
+               <strong>Solution:</strong> Added detailed input validation and custom exception handling (e.g., invalid serial numbers, negative prices).</p>
+
+            <h3>Workflow</h3>
+            <ul>
+                <li><strong>Design Phase:</strong> Created a project structure based on MVC architecture and documented a UML diagram for OOP hierarchy.</li>
+                <li><strong>Development Phase:</strong> Used Eclipse IDE and Git for version control, dividing tasks between team members to ensure balanced contributions.</li>
+                <li><strong>Testing Phase:</strong> Developed JUnit tests for key functionality, including toy search, inventory updates, and exception handling.</li>
+            </ul>
+
+            <h3>Illustrative Code Snippet</h3>
+            <p>Below is a screenshot of the `Toy` superclass, showcasing the use of abstraction and inheritance:</p>
+            <figure>
+                <img src="images/toy-superclass.png" alt="Toy Superclass Code Snippet" class="screenshot">
+                <figcaption>Screenshot: `Toy` superclass demonstrating abstraction and shared attributes.</figcaption>
+            </figure>
+
+            <h3>Sample Outputs</h3>
+            <figure>
+                <img src="images/main-menu.png" alt="Main Menu Screenshot" class="screenshot">
+                <figcaption>Screenshot: Main menu with search and purchase options.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/add-toy.png" alt="Adding a Toy Screenshot" class="screenshot">
+                <figcaption>Screenshot: Adding a new toy to the inventory.</figcaption>
+            </figure>
+
+            <h3>Learning Outcome</h3>
+            <p>This project deepened my understanding of object-oriented design and implementation in Java. I learned to work with file I/O for data persistence, apply exception handling effectively, and design maintainable code. Additionally, I gained experience collaborating on a Git-managed team project.</p>
+        </div>
+    </main>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 [Your Name]. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
